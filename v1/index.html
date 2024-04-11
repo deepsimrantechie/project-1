@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>www.testing.com</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="68"
+            widht="68"
+            alt="Today I Learned logo"
+          />
+          <h1 style="color: aliceblue; text-align: left">TODAY I LEARNED</h1>
+        </div>
+        <button class="btn btn-large btn-open">share a fact</button>
+      </header>
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share a fact with a world" />
+        <span>200</span>
+        <input type="text" placeholder="trustworthy source" />
+        <select>
+          <option value="">choose category:</option>
+          <option value="technology">technology</option>
+          <option value="science">science</option>
+          <option value="finance">finance</option>
+        </select>
+        <button class="btn btn-large">post</button>
+      </form>
+      <main class="main">
+        <aside>
+          <ul>
+            <li><button class="btn btn-all-category">all</button></li>
+            <li class="catoegorie">
+              <button class="btn btn-category">Techology</button>
+            </li>
+            <li><button class="btn btn-category">Science</button></li>
+            <li><button class="btn btn-category">finance</button></li>
+            <li><button class="btn btn-category">Society</button></li>
+            <li><button class="btn btn-category">entertainment</button></li>
+            <li><button class="btn btn-category">health</button></li>
+            <li><button class="btn btn-category">history</button></li>
+            <li><button class="btn btn-category">news</button></li>
+          </ul>
+        </aside>
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                react is being developed by meta (formerly facbook)
+                <a
+                  class="source"
+                  href="https://www.youtube.com/watch?v=r_eqAAM4n7A&list=RDfPza68aE_bc&index=6"
+                  target="_blank"
+                  >(source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >TECHNOLOGY</span
+              >
+              <div class="vote-button">
+                <button><strong>23</strong></button>
+                <button><strong>34</strong></button>
+                <button><strong>22</strong></button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                millennial dads spend 3 times as much time with their kids than
+                their father spent with them. in 1982, 43% of father had never
+                changed a diaper,today ,that number is down to 3%
+                <a
+                  class="source"
+                  href="https://www.youtube.com/watch?v=tJcAplapJ6Y"
+                  target="blank"
+                  >(source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #eab308">society</span>
+              <div class="vote-button">
+                <button><strong>24</strong></button>
+                <button><strong>4</strong></button>
+                <button><strong>2</strong></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
